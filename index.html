@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEERA | Premium Artificial Jewellery</title>
+    <meta name="description" content="Shop the latest collection of premium artificial jewellery at MEERA. Buy trendy necklaces, earrings, bangles & more.">
+    
+    <!-- External Resources -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="header">
+        <nav class="nav-container">
+            <a href="#" class="brand-logo">MEERA</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop Collections</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+                <div class="cart-icon-container" id="cart-icon-container">
+                    <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="assets/meera_hero_banner_1776396223827.png" alt="MEERA Premium Bridal Jewellery Collection" class="hero-img">
+        <div class="hero-content">
+            <h1>Elegance Reimagined.</h1>
+            <p>Discover our exclusive range of South Indian bridal styles, luxury antique neckpieces, and elegant fashion jewelry designed for every occasion.</p>
+            <a href="#shop" class="btn">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Featured Products / Shop Section -->
+    <section id="shop" class="featured">
+        <h2 class="section-title">Trending Now</h2>
+        
+        <div class="products-grid" id="product-container">
+            <!-- Products will be injected here by app.js -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">The MEERA Legacy</h2>
+                <p>Welcome to <strong>MEERA</strong>, the premier destination for high-end artificial and fashion jewelry in Chennai. We believe that every piece of jewelry tells a unique story of tradition, elegance, and beauty.</p>
+                <p>Our curated selections range from exquisite antique replicas to modern, trendy designs crafted for the contemporary woman. From South Indian bridal choker sets to minimalist daily wear earrings, MEERA is dedicated to bringing you unmatched craftsmanship and timeless aesthetics without the premium price tag.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fa-solid fa-gem"></i>
+                        <span>Premium Quality</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span>Pan-India Delivery</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <span>Handcrafted Designs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image-container">
+                <img src="assets/meera_necklace_1776396239567.png" alt="MEERA Quality Demonstration" class="about-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MEERA</h3>
+                <p>Bringing you the finest artificial, antique, and fashion jewelry with unmatched quality and pristine aesthetics.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p class="contact-info"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</p>
+                <p class="contact-info"><i class="fa-solid fa-phone"></i> +91 98840 12990</p>
+                <p class="contact-info"><i class="fa-solid fa-envelope"></i> info@meerajewels.com</p>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            &copy; 2026 MEERA Jewellery. All rights reserved. Designed for Demonstration.
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fa-solid fa-circle-check" style="color: #27ae60; font-size: 1.5rem;"></i>
+        <div>
+            <h4 style="margin: 0; padding: 0;">Added to Cart</h4>
+            <p style="margin: 0; font-size: 0.9rem;" id="toast-msg">Item added successfully.</p>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <i class="fa-solid fa-xmark close-cart" id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p class="empty-cart-msg" id="empty-cart-msg">Your cart is currently empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">₹0</span>
+            </div>
+            <button class="btn checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Application Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
