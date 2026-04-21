@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 :root {
-    --primary-color: #D4AF37; /* Rich Gold */
-    --primary-light: #F9F6EE; /* Cream / Bone */
-    --secondary-color: #2C2C2C; /* Deep Charcoal */
-    --text-dark: #1A1A1A;
-    --text-light: #F4F4F4;
-    --accent: #E5C158;
-    --bg-color: #FAFAFA;
+    --primary-color: #FFD700; /* Bright Gold */
+    --primary-light: #FFF0F5; /* Light Pink/Cream */
+    --secondary-color: #A0006D; /* Deep Magenta */
+    --text-dark: #2A001A; /* Dark purple/black */
+    --text-light: #FFFFFF;
+    --accent: #FFE600;
+    --bg-color: #FFF5F8;
+    --gradient-bg: linear-gradient(135deg, #8A0078 0%, #E6004C 100%);
 }
 
 * {
@@ -115,7 +116,8 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: var(--secondary-color);
+    background-color: #1A1A1A; /* Dark neutral background to darken image naturally */
+    border-bottom: 5px solid var(--secondary-color);
     overflow: hidden;
 }
 
@@ -156,7 +158,7 @@ header {
     display: inline-block;
     padding: 1rem 2.5rem;
     background: var(--primary-color);
-    color: var(--text-light);
+    color: var(--text-dark);
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 600;
@@ -334,7 +336,7 @@ header {
 
 /* Footer Section */
 footer {
-    background: var(--secondary-color);
+    background: var(--gradient-bg);
     color: var(--text-light);
     padding: 4rem 2rem 2rem;
     margin-top: 4rem;

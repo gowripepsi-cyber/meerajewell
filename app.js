@@ -1,31 +1,31 @@
-// Mock Data for MEERA Products
+// Mock Data for JWELLJIVE Products
 const products = [
     {
         id: 1,
         title: "Kundan Antique Choker Set",
         price: "₹18,500",
-        image: "assets/meera_necklace_1776396239567.png",
+        image: "assets/jwelljive_necklace_1776396239567.png",
         category: "necklace"
     },
     {
         id: 2,
         title: "Royal Emerald Chandelier Earrings",
         price: "₹6,200",
-        image: "assets/meera_earrings_1776396255364.png",
+        image: "assets/jwelljive_earrings_1776396255364.png",
         category: "earrings"
     },
     {
         id: 3,
         title: "Temple Jewellery Bridal Long Haar",
         price: "₹24,000",
-        image: "assets/meera_necklace_1776396239567.png", // reusing image for demo
+        image: "assets/jwelljive_necklace_1776396239567.png", // reusing image for demo
         category: "necklace"
     },
     {
         id: 4,
         title: "Ruby Studded Jhumkas",
         price: "₹4,800",
-        image: "assets/meera_earrings_1776396255364.png", // reusing image for demo
+        image: "assets/jwelljive_earrings_1776396255364.png", // reusing image for demo
         category: "earrings"
     }
 ];
